@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio KODAY</title>
+    <link href="dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="icon" href="src/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #0a930a;
+        }
+
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            color: #000000;
+        }
+
+        .swiper-pagination-bullet {
+            background: black;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #0a930a;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900 scroll-smooth">
+
+    <header class="bg-gray-100 sticky top-0 z-50  w-full">
+        <nav class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between relative">
+            <!-- Logo -->
+            <div class="text-2xl font-bold text-green-700">KODAY</div>
+
+            <!-- Hamburger (mobile only) -->
+            <button id="menu-toggle" class="block sm:hidden text-2xl text-gray-700 focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Nav Menu -->
+            <ul id="nav-menu"
+                class="hidden sm:flex flex-col sm:flex-row gap-4 sm:gap-6 sm:static absolute top-full left-0 w-full sm:w-auto bg-gray-100 sm:bg-transparent px-4 sm:px-0 py-4 sm:py-0 border-t sm:border-none">
+                <li><a href="#home" class="block text-gray-700 hover:text-black transition">Home</a></li>
+                <li><a href="#about" class="block text-gray-700 hover:text-black transition">About</a></li>
+                <li><a href="#projects" class="block text-gray-700 hover:text-black transition">Projects</a></li>
+                <li><a href="#services" class="block text-gray-700 hover:text-black transition">Services</a></li>
+                <li><a href="#contact" class="block text-gray-700 hover:text-black transition">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hidden opacity-0 opacity-100 translate-y-0 translate-y-20"></div>
+
+    <section id="home" class="flex flex-col items-center justify-center text-center min-h-screen px-4 mt-[-5vh]">
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-gray-700">More Than Just a Creative Person</h1>
+        <h2 class="text-xl sm:text-2xl lg:text-3xl font-medium mb-6 text-gray-700">
+            <span class="text-green-700">K</span>adek <span class="text-green-700">O</span>nick <span
+                class="text-green-700">D</span>wi<span class="text-green-700">a</span>ri <span
+                class="text-green-700">Y</span>udha
+        </h2>
+        <p class="text-gray-700 max-w-xl">A Student in Politeknik Negeri Bali. Currently looking for an internship
+            opportunity to develop my soft & hard skills. Any information about me, let's explore further!</p>
+    </section>
+
+    <section id="about"
+        class="max-w-5xl mx-auto px-4 py-12 text-center opacity-0 translate-y-20 transition-all duration-700 ease-out"
+        data-animate>
+        <h2 class="text-3xl font-bold mb-4 text-gray-700">About Me</h2>
+        <div class="flex justify-center">
+            <img src="src/img/3x4 Biru.jpg" alt="Profile Picture"
+                class="w-28 h-32 sm:w-36 sm:h-40 rounded-2xl shadow-lg mb-4">
+        </div>
+        <p class="text-gray-700 mb-3">I am a <span class="text-green-700">junior</span> developer and designer dedicated
+            to creating beautiful and functional web applications.</p>
+        <p class="text-gray-700">My mission is to deliver high-quality and high-services software solutions that meet
+            the needs of our clients.</p>
+    </section>
+
+    <section id="projects"
+        class="max-w-6xl mx-auto px-4 py-12 text-center opacity-0 translate-y-20 transition-all duration-700 ease-out"
+        data-animate>
+        <h2 class="text-3xl font-bold mb-6 text-gray-700">Projects</h2>
+        <div class="flex flex-wrap justify-center gap-6">
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition w-full sm:max-w-md">
+                <h3 class="text-xl font-semibold mb-2">Web-based Inventory System</h3>
+                <div class="swiper mySwiper rounded-lg overflow-hidden mb-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="src/img/project1/logingudang.png"
+                                class="w-full h-48 object-contain"></div>
+                        <div class="swiper-slide"><img src="src/img/project1/gudang1.png"
+                                class="w-full h-48 object-contain"></div>
+                        <div class="swiper-slide"><img src="src/img/project1/gudang2.png"
+                                class="w-full h-48 object-contain"></div>
+                        <div class="swiper-slide"><img src="src/img/project1/gudang3.png"
+                                class="w-full h-48 object-contain"></div>
+                        <div class="swiper-slide"><img src="src/img/project1/gudang4.png"
+                                class="w-full h-48 object-contain"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <p class="text-gray-700">Simple and well managed system using Code Igniter 3 Framework PHP, JavaScript &
+                    AJAX</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition w-full sm:max-w-md">
+                <h3 class="text-xl font-semibold mb-2">Web-based Migrant Data System</h3>
+                <div class="swiper mySwiper rounded-lg overflow-hidden mb-4">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="src/img/project2/pendatang1.png"
+                                class="w-full h-48 object-contain"></div>
+                        <div class="swiper-slide"><img src="src/img/project2/pendatang2.png"
+                                class="w-full h-48 object-contain"></div>
+                        <div class="swiper-slide"><img src="src/img/project2/pendatang3.png"
+                                class="w-full h-48 object-contain"></div>
+                        <div class="swiper-slide"><img src="src/img/project2/pendatang4.png"
+                                class="w-full h-48 object-contain"></div>
+                        <div class="swiper-slide"><img src="src/img/project2/pendatang5.png"
+                                class="w-full h-48 object-contain"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <p class="text-gray-700">Complex and user-friendly system using Code Igniter 3 Framework PHP,
+                    JavaScript, AJAX & Leaflet</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services"
+        class="bg-gray-50 py-12 px-4 text-center opacity-0 translate-y-20 transition-all duration-700 ease-out"
+        data-animate>
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-6 text-gray-700">Services</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-gray-700">
+                <div>Junior Web Development</div>
+                <div>Teamworker</div>
+                <div>UI/UX Design</div>
+                <div>Consulting Services</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact"
+        class="max-w-4xl mx-auto px-4 py-12 opacity-0 translate-y-20 transition-all duration-700 ease-out" data-animate>
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-700">Contact Me</h2>
+        <form id="contact-form" action="#" method="post" class="space-y-4">
+            <input type="text" name="name" id="name" placeholder="Your Name"
+                class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500" />
+            <input type="email" name="email" id="email" placeholder="Your Email"
+                class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500" />
+            <textarea name="message" id="message" rows="4" placeholder="Your Message"
+                class="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
+            <button type="submit"
+                class="flex items-center gap-2 px-6 py-2 bg-green-700 text-white rounded hover:bg-white hover:text-green-700 transition sm:w-auto">
+                <span>Send Message</span>
+                <i class="fab fa-whatsapp text-lg"></i>
+            </button>
+        </form>
+    </section>
+
+    <footer class="text-center text-sm text-gray-500 py-6 bg-gray-100 mt-10">
+        &copy; 2025 Kadek Onick Dwiari Yudha
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.remove('opacity-0', 'translate-y-20');
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('[data-animate]').forEach(el => {
+                observer.observe(el);
+            });
+        });
+
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+            if (!name || !email || !message) {
+                alert("Please fill out all fields.");
+                return;
+            }
+            const text = `Halo, saya ${name} (${email}) ingin menghubungi Anda:\n\n${message}`;
+            const encodedText = encodeURIComponent(text);
+            const phone = "6281236067120";
+            const waUrl = `https://wa.me/${phone}?text=${encodedText}`;
+            window.open(waUrl, "_blank");
+        });
+
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        toggleBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
