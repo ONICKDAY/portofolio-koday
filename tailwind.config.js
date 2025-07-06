@@ -43,6 +43,11 @@ module.exports = {
     // List style
     "flex-col",
     "flex-row",
+
+    {
+      pattern:
+        /(bg|text)-(red|blue|green|yellow|pink)-(100|200|300|400|500|600|700|800)/,
+    },
   ],
   theme: {
     extend: {},

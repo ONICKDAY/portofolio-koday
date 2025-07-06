@@ -57,7 +57,7 @@
                 <li><a href="#home" class="block text-gray-700 hover:text-black transition">Home</a></li>
                 <li><a href="#about" class="block text-gray-700 hover:text-black transition">About</a></li>
                 <li><a href="#projects" class="block text-gray-700 hover:text-black transition">Projects</a></li>
-                <li><a href="#services" class="block text-gray-700 hover:text-black transition">Services</a></li>
+                <!-- <li><a href="#services" class="block text-gray-700 hover:text-black transition">Services</a></li> -->
                 <li><a href="#contact" class="block text-gray-700 hover:text-black transition">Contact</a></li>
             </ul>
         </nav>
@@ -81,13 +81,40 @@
         data-animate>
         <h2 class="text-3xl font-bold mb-4 text-gray-700">About Me</h2>
         <div class="flex justify-center">
-            <img src="src/img/3x4 Biru.jpg" alt="Profile Picture"
-                class="w-28 h-32 sm:w-36 sm:h-40 rounded-2xl shadow-lg mb-4">
+            <img src="src/img/3x4 Transparan.png" alt="Profile Picture"
+                class="w-28 h-32 sm:w-36 sm:h-40 rounded-2xl  mb-4">
         </div>
+        <button onclick="toggleModal(true)"
+            class="px-4 py-2 bg-green-700 text-white rounded hover:bg-green-800 cursor-pointer">Curriculum
+            Vitae</button>
         <p class="text-gray-700 mb-3">I am a <span class="text-green-700">junior</span> developer and designer dedicated
             to creating beautiful and functional web applications.</p>
         <p class="text-gray-700">My mission is to deliver high-quality and high-services software solutions that meet
             the needs of our clients.</p>
+
+        <div class="mb-6">
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">Hard Skills</h3>
+            <div class="flex flex-wrap justify-center gap-2">
+                <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">HTML, Css, Tailwind &
+                    Bootstrap</span>
+                <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">PHP</span>
+                <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">MySQL</span>
+                <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">Basic Network</span>
+                <span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">Fast Typing (78 WPM)</span>
+            </div>
+        </div>
+
+        <!-- Soft Skill -->
+        <div>
+            <h3 class="text-xl font-semibold text-gray-700 mb-2">Soft Skills</h3>
+            <div class="flex flex-wrap justify-center gap-2">
+                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">English Communication</span>
+                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Talkative</span>
+                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Team Work</span>
+                <span class="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">Time Management</span>
+
+            </div>
+        </div>
     </section>
 
     <section id="projects"
@@ -145,7 +172,7 @@
         </div>
     </section>
 
-    <section id="services"
+    <!-- <section id="services"
         class="bg-gray-50 py-12 px-4 text-center opacity-0 translate-y-20 transition-all duration-700 ease-out"
         data-animate>
         <div class="max-w-5xl mx-auto">
@@ -157,7 +184,7 @@
                 <div>Consulting Services</div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <section id="contact"
         class="max-w-4xl mx-auto px-4 py-12 opacity-0 translate-y-20 transition-all duration-700 ease-out" data-animate>
@@ -180,6 +207,32 @@
     <footer class="text-center text-sm text-gray-500 py-6 bg-gray-100 mt-10">
         &copy; 2025 Kadek Onick Dwiari Yudha
     </footer>
+
+    <!-- Overlay -->
+    <div id="cvModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <!-- Modal Box -->
+        <div class="bg-white rounded-lg shadow-lg max-w-4xl w-full relative">
+
+            <!-- Close Button -->
+            <button onclick="toggleModal(false)"
+                class="absolute top-2 right-2 text-gray-500 hover:text-red-500 text-xl font-bold">
+                &times;
+            </button>
+
+            <!-- Content -->
+            <div class="p-4">
+                <h2 class="text-xl font-semibold mb-4">Curriculum Vitae</h2>
+
+                <!-- Gambar CV (bisa diganti dengan iframe PDF jika perlu) -->
+                <iframe src="src/img/cv_onick.pdf" alt="CV" class="w-full h-[80vh] rounded border"
+                    frameborder="0"></iframe>
+
+                <!-- Jika pakai PDF, ganti bagian atas dengan ini:
+      <iframe src="cv.pdf" class="w-full h-[600px] border rounded" frameborder="0"></iframe>
+      -->
+            </div>
+        </div>
+    </div>
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
@@ -235,6 +288,14 @@
             navMenu.classList.toggle('hidden');
         });
     </script>
+
+    <script>
+        function toggleModal(show) {
+            const modal = document.getElementById('cvModal');
+            modal.classList.toggle('hidden', !show);
+        }
+    </script>
+
 
 </body>
 
